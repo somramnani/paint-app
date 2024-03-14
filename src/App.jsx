@@ -1,8 +1,20 @@
 import "./App.css";
 import { useState } from "react";
 
-const Square = () => {
-  return <div className="square"></div>;
+const Square = ({ selectedColor }) => {
+  const [individualSquareColor, setIndividualSquareColor] = useState("");
+
+  const setSquareColor = () => {
+    setIndividualSquareColor(selectedColor);
+  };
+
+  return (
+    <div
+      style={{ backgroundColor: individualSquareColor }}
+      onClick={(e) => setSquareColor()}
+      className="square"
+    ></div>
+  );
 };
 
 function App() {
@@ -31,7 +43,7 @@ function App() {
           return (
             <div className="square-container">
               {pixel.map((square, index) => {
-                return <Square />;
+                return <Square selectedColor={userInput} />;
               })}
             </div>
           );
