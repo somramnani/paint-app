@@ -1,21 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-
-const Square = ({ selectedColor }) => {
-  const [individualSquareColor, setIndividualSquareColor] = useState("");
-
-  const setSquareColor = () => {
-    setIndividualSquareColor(selectedColor);
-  };
-
-  return (
-    <div
-      style={{ backgroundColor: individualSquareColor }}
-      onClick={(e) => setSquareColor()}
-      className="square"
-    ></div>
-  );
-};
+import Square from "./Square";
 
 function App() {
   const board = Array(10).fill(Array(10).fill(null));
