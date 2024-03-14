@@ -4,12 +4,15 @@
   text-align: center;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+  background-color: #faebd7;
 }
 
 .square {
   height: 50px;
   width: 50px;
   border: 1px solid black;
+  background-color: white;
 }
 
 .board-container {
