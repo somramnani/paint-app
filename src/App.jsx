@@ -4,7 +4,7 @@ import Square from "./Square";
 
 function App() {
   const board = Array(10).fill(Array(10).fill(null));
-  const [userInput, setUserInput] = useState("");
+  const [userInput, setUserInput] = useState("#000000");
 
   const handleOnChange = (e) => {
     setUserInput(e.target.value);
