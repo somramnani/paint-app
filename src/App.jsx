@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <h1>Paint</h1>
-      <div>
+      <div className="color-selector">
         <input
           type="color"
           id="head"
