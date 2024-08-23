@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import Square from "./Square";
+import Square from "./components/Square";
 
 function App() {
   const board = Array(10).fill(Array(10).fill(null));
