@@ -1,7 +1,5 @@
 # paint-app
 
-
-## Details
 A simple paint application created in React. 
 
 ## Features
